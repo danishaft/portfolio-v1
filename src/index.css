@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #111111;
+    color: #ffff;
+    font-family: 'Manrope', sans-serif;
+    /*font-family: 'Work Sans', sans-serif;*/
+}
+.mobile-nav-color{
+    background: #0c0c0c;
+}
+.mobile-nav{
+    background: #0c0c0c;
+}
+h1{
+    font-size: clamp(.8rem, 3vw, 2.3rem);
+    /*font-size: min(5vw, 6vw);*/
+    white-space: nowrap;
+}
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1.6rem;
+    width: 100%;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+    margin-left: 1rem;
+}
+.menu-btn-item{
+    position: absolute;
+    /*max-width: 2rem;*/
+    width: 100%;
+    max-height: .1rem;
+    height: 100%;
+    background: #ffff;
+    border-radius: 5px;
+    transition: all .8s ease-in-out;
+}
+.menu-btn-item::before, 
+.menu-btn-item::after {
+    content: '';
+    position: absolute;
+   /* max-width: 2rem;*/
+    /*min-width: .8rem;*/
+    width: 100%;
+    max-height: .1rem;
+    height: 100%;
+    background: #ffff;
+    border-radius: 5px;
+    transition: all .8s ease-in-out;
+}
+.menu-btn-item::before {
+    transform: translateY(-.4rem);
+}
+.menu-btn-item::after {
+    transform: translateY(.4rem);
+}
+.menu-btn.open .menu-btn-item{
+    transform: translateY(-50px);
+    background:  #212121;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn-item::before{
+    transform: rotate(45deg) translate(2.2rem, 2.2rem);
+}
+.menu-btn.open .menu-btn-item::after{
+    transform: rotate(-45deg) translate(-2.2rem, 2.2rem);
+}
+.bottom-nav h3 {
+    font-size: clamp(2rem, 3.7vw, 4rem);
+}
+.bottom-nav p{
+    font-size: clamp(.6rem, 2.5vw, .7rem);
+}
+.social-card{
+    max-width: 3rem;
+    height: 3rem;
+    width: 100%;
+    background: #232529 ; 
+}
+.nav-list li{
+    font-size: clamp(.9rem, 3vw, 1.2rem);
+    font-weight: 500;
+}
+.grey{
+    color: rgba(227, 228, 230, 0.55);
+}
+.hero-text h2{
+    font-size: clamp(1.7rem, 5vw, 4.3rem);
+}
+.hero-text .intro-text{
+    font-size: clamp(.7rem, 3.5vw, 1rem);
+}
+.projects .small-title, .about .small-title{
+    font-size: clamp(1.3rem, 3vw, 3rem);
+}
+.project-desc h4{
+    font-size: clamp(.8rem, 4vw, 1.3rem);
+}
+.project-desc p {
+    font-size: clamp(.7rem, 3vw, 1rem);
+}
+.project-desc h5 {
+    font-size: clamp(.5rem, 2.5vw, .8rem);
+}
+.project-desc button{
+    border: 1px solid rgba(227, 228, 230, 0.55);
+    max-width: 7rem;
+    min-width: 6rem;
+    width: 100%;
+    max-height: 1.7rem;
+    height: 100%;
+    font-size: clamp(.4rem, 1.7vw, .7rem );
+}
+.about p{
+    font-size: clamp(1rem, 2.7vw, 1.8rem);
+}
+.quote-sec h2 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+}
+.explanation{
+    font-size: clamp(.7rem, 2.7vw, 2rem);
+    color: rgba(255, 255, 255, 0.55);
+}
+.quote-text {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-family: 'Rubik Pixels', cursive;
+}
+.author {
+    font-size: clamp(.4rem, 2vw, 2rem);
+}
