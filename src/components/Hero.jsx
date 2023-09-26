@@ -7,7 +7,7 @@ function Hero() {
             <p className="view-projectBtn intro-text"><a href="#works"><span className="grey">See</span> Projects</a></p>
           </div>   
           <div className="hero-img">
-            <img className="w-full rounded-3xl" src="profile-pic.png" alt="Profile Photo" />
+            <img className="w-full rounded-3xl" src="profile-pic2.png" alt="Profile Photo" />
           </div>
         </div>
     )
